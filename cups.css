@@ -23,7 +23,7 @@ font-size: 18px;
 }
 canvas{
     border: 5px ridge gray;
-    box-shadow: 5px 5px 17px white;
+    box-shadow: 5px 5px 17px blue;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
