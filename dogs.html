@@ -1,0 +1,36 @@
+<html>
+<head>
+
+	<title>Dogs Detection Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="dogs.css">
+</head>
+
+<body background="background.jpg">
+  <center>
+      <div class="btn btn-success heading">
+          <button onclick="back()" class="btn-default">
+              <span id="span"><ion-icon id="icon" name="home-outline"></ion-icon></span>
+          </button>
+          <label>Dogs Detection</label>
+      </div>
+      <br>
+      <h3 id='status' class="btn btn-danger"></h3>
+      <br>
+      <h3 id="NumberOfObjects" class="btn btn-warning"></h3>
+  </center>
+
+  <script src="dogs.js"></script>
+
+</body>
+</html>

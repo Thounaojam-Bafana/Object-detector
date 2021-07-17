@@ -1,7 +1,7 @@
 status = "";
 objects = [];
 function preload(){
-    img = loadImage("cups.jpg");
+    img = loadImage("studytable.jpg");
 }
 function setup(){
     canvas = createCanvas(500,600);
@@ -24,6 +24,7 @@ function gotResult(error, results){
 function draw(){
     image(img, 0, 0, 500, 600);
     if(status != ""){
+        document.getElementById("NumberOfObjects").innerHTML = "There are 8 big objects from which CoCo SSD has detected 3 objects correctly and 1 object incorrectly";
         for(i = 0; i<objects.length; i++){
             valInPercent = floor(objects[i].confidence * 100);
             fill("red");
@@ -31,7 +32,6 @@ function draw(){
             noFill();
             stroke("blue");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
-            document.getElementById("NumberOfObjects").innerHTML = "There are 8 big objects from which CoCo SSD has detected 3 objects correctly and 1 object incorrectly";
         }
     }
 }

@@ -1,7 +1,7 @@
 status = "";
 objects = [];
 function preload(){
-    img = loadImage("cups.jpg");
+    img = loadImage("dogs.jpg");
 }
 function setup(){
     canvas = createCanvas(500,600);
@@ -31,7 +31,7 @@ function draw(){
             noFill();
             stroke("blue");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
-            document.getElementById("NumberOfObjects").innerHTML = "There are 8 big objects from which CoCo SSD has detected 3 objects correctly and 1 object incorrectly";
+            document.getElementById("NumberOfObjects").innerHTML = "There are 3 big objects from which CoCo SSD has detected 2 objects.";
         }
     }
 }

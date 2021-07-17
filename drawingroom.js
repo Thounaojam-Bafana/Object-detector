@@ -1,7 +1,7 @@
 status = "";
 objects = [];
 function preload(){
-    img = loadImage("cups.jpg");
+    img = loadImage("Drawing-room.jpg");
 }
 function setup(){
     canvas = createCanvas(500,600);
@@ -24,6 +24,7 @@ function gotResult(error, results){
 function draw(){
     image(img, 0, 0, 500, 600);
     if(status != ""){
+        document.getElementById("NumberOfObjects").innerHTML = "There are 5 main objects from which CoCo SSD haven't detected a single object";
         for(i = 0; i<objects.length; i++){
             valInPercent = floor(objects[i].confidence * 100);
             fill("red");
